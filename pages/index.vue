@@ -1,17 +1,7 @@
-<script setup>
-const playerTag = ref('');
-
-const submitTag = () => {
-    navigateTo(`/player/${playerTag.value.trim().toUpperCase()}`);
-}
-</script>
-
 <template>
-    <div>
-      <h1>Enter Brawl Stars Player Tag</h1>
-      <form @submit.prevent="submitTag">
-        <input v-model="playerTag" placeholder="Enter player tag" required>
-        <button type="submit">Get Stats</button>
-      </form>
+  <div class="w-full flex justify-center px-4">
+    <div class="w-full max-w-2xl">
+      <PlayerSearchBox />
     </div>
-  </template>
+  </div>
+</template>
