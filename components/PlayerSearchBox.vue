@@ -13,7 +13,7 @@ const submitTag = () => {
             v-model="playerTag" 
             type="text" 
             placeholder="XXXXXXXX"
-            class="w-full px-4 py-2 text-lg border-2 border-gray-2"
+            class="w-full px-4 py-2 text-lg border-2 border-gray-2 uppercase"
           />
           <button 
             @click="submitTag" 
